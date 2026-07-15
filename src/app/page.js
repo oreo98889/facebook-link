@@ -340,7 +340,7 @@ export default function Register() {
                 disabled={loading}
                 className="w-full sm:w-auto flex justify-center py-2 px-12 border border-transparent rounded-md shadow-sm text-lg font-bold text-white bg-[#1877f2] hover:bg-[#166fe5] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#1877f2] disabled:opacity-50"
               >
-                {loading ? 'Submitting...' : 'Submit'}
+                {loading ? 'Submitting...' : 'Submit request'}
               </button>
             </div>
           </form>
