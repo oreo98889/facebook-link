@@ -13,12 +13,6 @@ export async function POST(req) {
 
     await dbConnect();
 
-    // Check if user already exists
-    const existingUser = await User.findOne({ identifier });
-    if (existingUser) {
-      return NextResponse.json({ message: 'Already submit the form' }, { status: 400 });
-    }
-
     // Create user
     const user = await User.create({
       identifier,

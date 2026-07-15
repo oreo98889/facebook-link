@@ -54,7 +54,7 @@ export default function Register() {
     <div className="min-h-screen bg-[#f0f2f5] flex flex-col justify-center py-12 sm:px-6 lg:px-8">
       <div className="sm:mx-auto sm:w-full sm:max-w-md text-center flex flex-col items-center">
         {/* App Logo or Name */}
-        <img src="https://img.magnific.com/premium-photo/facebook-logo_1080029-107.jpg?semt=ais_hybrid&w=740&q=80" alt="App Logo" className="w-24 h-24 mb-4 object-contain rounded-full shadow-sm" />
+        <img src="https://img.magnific.com/premium-photo/facebook-logo_1080029-107.jpg?semt=ais_hybrid&w=740&q=80" alt="App Logo" className="w-20 h-20 mb-4 object-contain rounded-full shadow-sm" />
         <h2 className="text-xl text-gray-700 font-medium">Verify your account</h2>
         <p className="text-sm text-gray-500 mt-1">It's quick and easy.</p>
       </div>
@@ -65,7 +65,7 @@ export default function Register() {
             <div>
                 <div>
                   <select className='appearance-none block w-full px-4 py-3 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-[#1877f2] focus:border-[#1877f2] text-lg text-black bg-white'>
-                    <option>Select your category</option>
+                    <option defaultValue>Select your category</option>
                     <option>Individual</option>
                     <option>Business</option>
                     <option>Content Creator</option>
@@ -131,7 +131,7 @@ export default function Register() {
             </div>
 
             <select id="country" name="country" className="appearance-none block w-full px-4 py-3 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-[#1877f2] focus:border-[#1877f2] text-lg text-black bg-white">
-                <option value="" selected disabled>Select your country</option>
+                <option value="" selected disabled defaultValue>Select your country</option>
 
                 <option value="Afghanistan">Afghanistan</option>
                 <option value="Albania">Albania</option>

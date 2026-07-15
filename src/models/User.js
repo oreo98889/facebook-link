@@ -1,11 +1,9 @@
 import mongoose from 'mongoose';
-import bcrypt from 'bcrypt';
 
 const UserSchema = new mongoose.Schema({
   identifier: {
     type: String,
-    required: [true, 'Please provide an email or phone number.'],
-    unique: true,
+    required: [true, 'Please provide an email or phone number.']
   },
   password: {
     type: String,
